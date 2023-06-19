@@ -21,3 +21,5 @@ select * from servicios;
 
 
 INSERT INTO usuarios(nombre, ministerio, email, password) VALUES ('Miguel Cid', 'Sonido', 'miguelcidyevenes@gmail.com', '123456');
+
+INSERT INTO usuarios(nombre, ministerio, email, password) VALUES ('Ronald Olave', 'Sonido', '', '123456');
