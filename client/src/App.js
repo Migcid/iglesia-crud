@@ -1,24 +1,48 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from "react";
+import Datepicker from './DatePicker.js'
+
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="titulo">Formulario</h1>
+      
+        <div className="form-control text-center">
+          <div className='row'>
+            <div className="col-1 col-sm-3 col-md-1 col-xl-1"> 
+              <label> Nombre: <input type="text"/></label>
+              <label> Apellido: <input type="text"/></label>
+              <label> Correo Electronico:<input type="email" required/></label>
+              <label> Ministerio:     
+                <select>
+                    <option value="1">Sonido</option>
+                    <option value="2">Porteros</option>
+                    <option value="3">Red de ninos</option>
+                </select>
+              </label>
+              <label> Fecha de Servicio:<br></br> <Datepicker/>
+              
+              </label>
+
+              <button className="btn btn-success col-3" type="submit">Agregar Servicio</button>
+            </div>
+          
+
+
+            
+      
+          </div>
+           
+        
+        
+        </div>
+
+       
     </div>
+
   );
 }
 
